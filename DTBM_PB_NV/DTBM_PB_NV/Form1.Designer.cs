@@ -271,7 +271,7 @@
             this.groupBoxDSPB.Controls.Add(this.listView1);
             this.groupBoxDSPB.Location = new System.Drawing.Point(680, 30);
             this.groupBoxDSPB.Name = "groupBoxDSPB";
-            this.groupBoxDSPB.Size = new System.Drawing.Size(726, 305);
+            this.groupBoxDSPB.Size = new System.Drawing.Size(775, 305);
             this.groupBoxDSPB.TabIndex = 1;
             this.groupBoxDSPB.TabStop = false;
             this.groupBoxDSPB.Text = "Danh sách phòng ban";
@@ -287,7 +287,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(21, 47);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(683, 237);
+            this.listView1.Size = new System.Drawing.Size(732, 237);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -319,7 +319,7 @@
             this.groupBoxDSNV.Controls.Add(this.listView2);
             this.groupBoxDSNV.Location = new System.Drawing.Point(680, 427);
             this.groupBoxDSNV.Name = "groupBoxDSNV";
-            this.groupBoxDSNV.Size = new System.Drawing.Size(726, 263);
+            this.groupBoxDSNV.Size = new System.Drawing.Size(775, 263);
             this.groupBoxDSNV.TabIndex = 1;
             this.groupBoxDSNV.TabStop = false;
             this.groupBoxDSNV.Text = "Danh sách nhân viên";
@@ -335,7 +335,7 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(21, 40);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(683, 206);
+            this.listView2.Size = new System.Drawing.Size(732, 206);
             this.listView2.TabIndex = 3;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -414,7 +414,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 712);
+            this.ClientSize = new System.Drawing.Size(1513, 711);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSua);
