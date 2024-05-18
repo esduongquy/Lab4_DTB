@@ -72,93 +72,9 @@ namespace DTBM_PB_NV
             HienThi();
             HienThiNhanVien();
         }
-        //private void ThemPB()
-        //{
-        //    listView1.Items.Clear();
-        //    sqlConn.Open();
-
-        //    // Insert into PHONGBAN
-        //    sqlCode = @"INSERT INTO PHONGBAN VALUES(@MaPB, @TenPB, @SoDT, @DiaDiem)";
-        //    sqlComm = new SqlCommand(sqlCode, sqlConn);
-        //    sqlComm.Parameters.AddWithValue("@MaPB", txtMaPB.Text);
-        //    sqlComm.Parameters.AddWithValue("@TenPB", txtTenPB.Text);
-        //    sqlComm.Parameters.AddWithValue("@SoDT", txtSoDT.Text);
-        //    sqlComm.Parameters.AddWithValue("@DiaDiem", txtDiaDiem.Text);
-        //    sqlComm.ExecuteNonQuery();
-
-        //    sqlConn.Close();
-        //    HienThi();
-        //}
-
-        //private void ThemNV()
-        //{
-        //    listView2.Items.Clear();
-        //    sqlConn.Open();
-
-        //    // Insert into NHANVIEN
-        //    sqlCode = @"INSERT INTO NHANVIEN VALUES(@MaNV, @HoTen, @DiaChi, @SoDT_NV, @MaPB_NV)";
-        //    sqlComm = new SqlCommand(sqlCode, sqlConn);
-        //    sqlComm.Parameters.AddWithValue("@MaNV", txtMaNV.Text);
-        //    sqlComm.Parameters.AddWithValue("@HoTen", txtHoTen.Text);
-        //    sqlComm.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-        //    sqlComm.Parameters.AddWithValue("@SoDT_NV", txtSoDT_NV.Text);
-        //    sqlComm.Parameters.AddWithValue("@MaPB_NV", txtMaPB_NV.Text);
-        //    sqlComm.ExecuteNonQuery();
-
-        //    sqlConn.Close();
-        //    HienThi();
-        //}
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //listView1.Items.Clear();
-            //listView2.Items.Clear();
-            //sqlConn.Open();
 
-            //// Insert into PHONGBAN
-            ////sqlCode = @"INSERT INTO PHONGBAN VALUES(@MaPB, @TenPB, @SoDT, @DiaDiem)";
-            ////sqlComm = new SqlCommand(sqlCode, sqlConn);
-            ////sqlComm.Parameters.AddWithValue("@MaPB", txtMaPB.Text);
-            ////sqlComm.Parameters.AddWithValue("@TenPB", txtTenPB.Text);
-            ////sqlComm.Parameters.AddWithValue("@SoDT", txtSoDT.Text);
-            ////sqlComm.Parameters.AddWithValue("@DiaDiem", txtDiaDiem.Text);
-            ////sqlComm.ExecuteNonQuery();
-
-            //// Insert into NHANVIEN
-            ////sqlCode = @"INSERT INTO NHANVIEN VALUES(@MaNV, @HoTen, @DiaChi, @SoDT_NV, @MaPB_NV)";
-            ////sqlComm = new SqlCommand(sqlCode, sqlConn);
-            ////sqlComm.Parameters.AddWithValue("@MaNV", txtMaNV.Text);
-            ////sqlComm.Parameters.AddWithValue("@HoTen", txtHoTen.Text);
-            ////sqlComm.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-            ////sqlComm.Parameters.AddWithValue("@SoDT_NV", txtSoDT_NV.Text);
-            ////sqlComm.Parameters.AddWithValue("@MaPB_NV", txtMaPB_NV.Text);
-            ////sqlComm.ExecuteNonQuery();
-
-            //DialogResult f = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            //if (f == DialogResult.Yes)
-            //{
-            //    sqlCode = @"INSERT INTO PHONGBAN VALUES(@MaPB, @TenPB, @SoDT, @DiaDiem)";
-            //    sqlComm = new SqlCommand(sqlCode, sqlConn);
-            //    sqlComm.Parameters.AddWithValue("@MaPB", txtMaPB.Text);
-            //    sqlComm.Parameters.AddWithValue("@TenPB", txtTenPB.Text);
-            //    sqlComm.Parameters.AddWithValue("@SoDT", txtSoDT.Text);
-            //    sqlComm.Parameters.AddWithValue("@DiaDiem", txtDiaDiem.Text);
-            //    sqlComm.ExecuteNonQuery();
-            //}
-            //if (f == DialogResult.No)
-            //{
-            //    sqlCode = @"INSERT INTO NHANVIEN VALUES(@MaNV, @HoTen, @DiaChi, @SoDT_NV, @MaPB_NV)";
-            //    sqlComm = new SqlCommand(sqlCode, sqlConn);
-            //    sqlComm.Parameters.AddWithValue("@MaNV", txtMaNV.Text);
-            //    sqlComm.Parameters.AddWithValue("@HoTen", txtHoTen.Text);
-            //    sqlComm.Parameters.AddWithValue("@DiaChi", txtDiaChi.Text);
-            //    sqlComm.Parameters.AddWithValue("@SoDT_NV", txtSoDT_NV.Text);
-            //    sqlComm.Parameters.AddWithValue("@MaPB_NV", txtMaPB_NV.Text);
-            //    sqlComm.ExecuteNonQuery();
-            //}
-
-            //sqlConn.Close();
-            //HienThi();
-            //HienThiNhanVien();
             listView1.Items.Clear();
             listView2.Items.Clear();
             sqlConn.Open();
@@ -176,7 +92,8 @@ namespace DTBM_PB_NV
             System.Windows.Forms.Button btnNV = new System.Windows.Forms.Button() { Text = "Nhân viên", Left = 350, Width = 100, Top = 20 };
 
             btnPB.Click += (senderPB, ePB) =>
-            {             //// Insert into PHONGBAN
+            {             
+                //// Insert into PHONGBAN
                 sqlCode = @"INSERT INTO PHONGBAN VALUES(@MaPB, @TenPB, @SoDT, @DiaDiem)";
                 sqlComm = new SqlCommand(sqlCode, sqlConn);
                 sqlComm.Parameters.AddWithValue("@MaPB", txtMaPB.Text);
@@ -187,7 +104,8 @@ namespace DTBM_PB_NV
                 prompt.Close();
             };
             btnNV.Click += (senderNV, eNV) =>
-            {              //// Insert into NHANVIEN
+            {              
+                //// Insert into NHANVIEN
             sqlCode = @"INSERT INTO NHANVIEN VALUES(@MaNV, @HoTen, @DiaChi, @SoDT_NV, @MaPB_NV)";
             sqlComm = new SqlCommand(sqlCode, sqlConn);
             sqlComm.Parameters.AddWithValue("@MaNV", txtMaNV.Text);
